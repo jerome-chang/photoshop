@@ -1,0 +1,35 @@
+.layout__slider {
+    position: relative;
+    height: 360px;
+    overflow: hidden;
+    background-color: $gray;
+    .wrap{
+        width: 1920px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -960px;
+        overflow: hidden;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .swiper-slide {
+        img {
+            display: block;
+            height: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 15%;
+    }
+
+    .swiper-button-next {
+        right: 15%;
+    }
+}

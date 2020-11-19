@@ -1,0 +1,63 @@
+.recommend {
+    box-sizing: border-box;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        position: relative;
+        text-align: center;
+        width: 90%;
+        border-bottom: 1px solid $gray;
+        padding-top: $gutter-2;
+        margin: 0 auto $gutter-5;
+    }
+
+    &__subtitle {
+        color: $gray;
+        font-size: 0.75rem;
+        line-height: 0.75rem;
+        position: relative;
+        bottom: -0.5rem;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: 500;
+        margin: 0 auto;
+        background: #fff;
+        text-align: center;
+        line-height: 16px;
+        width: 66%;
+    }
+
+    &__content {
+        overflow: hidden;
+    }
+
+    .item {
+        float: left;
+        margin-bottom: $gutter-2;
+
+        &:nth-child(3n+2){
+            margin: 0 6px;
+        }
+
+        &__img {
+            width: 84px;
+            height: auto;
+            margin-bottom: $gutter-1;
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+            }
+        }
+        &__text{
+            width: 84px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-align: center;
+            font-size: 0.75rem;
+            color: $gray;
+        }
+    }
+}

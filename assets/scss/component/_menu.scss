@@ -1,0 +1,145 @@
+
+
+.topbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.pure-menu-active>.pure-menu-link,
+.pure-menu-link:focus,
+.pure-menu-link:hover {
+  background-color: inherit;
+}
+
+.custom-wrapper {
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    transition: height 0.5s;
+    a{
+        color: #FF4A0D;
+        font-weight: 700;
+    }
+}
+
+.custom-wrapper.open {
+    height: 7em;
+}
+
+.custom-menu-3 {
+    text-align: right;
+}
+
+.custom-toggle {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    display: none;
+    background-color: #333;
+}
+
+.custom-toggle .bar {
+    background-color: #FFF;
+    display: block;
+    // box-shadow: 2px 2px 2px #333;
+    width: 20px;
+    height: 2px;
+    border-radius: 100px;
+    position: absolute;
+    top: 16px;
+    right: 7px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.custom-toggle .bar:first-child {
+    -webkit-transform: translateY(-6px);
+    -moz-transform: translateY(-6px);
+    -ms-transform: translateY(-6px);
+    transform: translateY(-6px);
+}
+
+.custom-toggle .bar:last-child {
+    -webkit-transform: translateY(6px);
+    -moz-transform: translateY(6px);
+    -ms-transform: translateY(6px);
+    transform: translateY(6px);
+}
+.custom-toggle.x .bar {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.custom-toggle.x .bar:first-child {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+
+.logo{
+    height: 4em;
+}
+
+.pure-menu-heading{
+    padding: 2em 1em 2em 70%;
+}
+
+.pure-menu-horizontal{
+    padding: 3.0625em 2em;
+}
+
+@media (max-width: 64em) {
+    .topbar{
+        position: fixed;
+    }
+    .logo{
+        height: 2em;
+    }
+    .pure-menu-heading{
+        padding: 0.5em 1em;
+    }
+    .pure-menu-horizontal{
+        padding: 0.5625em 0;
+    }
+}
+
+
+@media (max-width: 47.999em) {
+    .custom-wrapper{
+        height: 3em;
+        &.open{
+            height: 137px;
+            
+            background-color: rgba($color: #000000, $alpha: 0.5);
+        }
+    }
+
+    .custom-menu-3 {
+        text-align: left;
+    }
+
+    .custom-toggle {
+        display: block;
+        // padding: 0.5em 0;
+    }
+
+    .logo{
+        height: 2em;
+    }
+    .pure-menu-heading{
+        padding: 0.5em 1em;
+    }
+}

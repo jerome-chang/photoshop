@@ -1,0 +1,10 @@
+extends layout/_layout.pug
+
+block content
+  - var title = "驱动创新<br>携手推进<br>亚太城轨发展";
+  include includes/component/_splash.pug
+  a(href="joinus.html").joinbutton 加入我們
+  .layout__content
+    include includes/component/_content.pug
+    include includes/component/_footer.pug
+    

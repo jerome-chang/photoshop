@@ -1,0 +1,9 @@
+extends layout/_layout.pug
+
+block content
+  - var title = "网上申请";
+  - var text = "欢迎加入APRIC 亚太轨道创新联盟。请有兴趣加入的机构或个人，<br>填妥表格，经行政委员会核实后，正式成为会员。";
+  include includes/component/_splash.pug
+  .layout__content
+    include includes/component/_join-step-3a.pug
+    include includes/component/_footer.pug

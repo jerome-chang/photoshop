@@ -1,0 +1,9 @@
+extends layout/_layout.pug
+
+block content
+  - var title = "Online application";
+  - var text = "Welcome to APRIC. Eligible individuals / organizations can apply for membership by completing this Membership Application Form. Acceptance of membership is subject to the approval of the APRIC Executive Committee.";
+  include includes/component/_splash_eng.pug
+  .layout__content
+    include includes/component/_join-step-4_eng.pug
+    include includes/component/_footer_eng.pug
